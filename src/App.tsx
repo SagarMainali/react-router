@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
-import Home from './Home'
-import About from './About'
+import Home from './Pages/Home'
+import About from './Pages/About'
+import Details from './Pages/Details'
 
 const App = () => {
 
@@ -12,6 +13,7 @@ const App = () => {
                <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/about" element={<About />} />
+                    <Route path="/about/:id" element={<Details />} />
                </Routes>
           </BrowserRouter>
      </>
