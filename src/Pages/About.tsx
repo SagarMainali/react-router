@@ -4,8 +4,8 @@ function About() {
   return (
     <div>
       <h2>This is About</h2>
-      <Link to='/about/:id'>link 1</Link><br />
-      <Link to='/about/:id'>link 2</Link>
+      <Link to='/about/link1'>link 1</Link><br />
+      <Link to='/about/link2'>link 2</Link>
     </div>
   )
 }
