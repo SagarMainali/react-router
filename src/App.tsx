@@ -4,6 +4,7 @@ import About from './Pages/About'
 import Layout from './Components/Layout'
 import Host from './Pages/Host'
 import Vans from './Pages/Vans'
+import VanDetails from './Pages/VanDetails'
 
 const App = () => {
 
@@ -14,6 +15,7 @@ const App = () => {
                          <Route index element={<Home />} />
                          <Route path="host" element={<Host />} />
                          <Route path="vans" element={<Vans />} />
+                         <Route path="vans/:id" element={<VanDetails />} />
                          <Route path="about" element={<About />} />
                     </Route>
                </Routes>
