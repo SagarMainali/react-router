@@ -10,6 +10,9 @@ import HostIncome from './Pages/Host/HostIncome'
 import HostReviews from './Pages/Host/HostReviews'
 import HostVans from './Pages/Host/HostVans'
 import HostVanDetails from './Pages/Host/HostVanDetails'
+import HostVanDetailsInfo from './Pages/Host/HostVanDetails/HostVanDetailsInfo'
+import HostVanDetailsPricing from './Pages/Host/HostVanDetails/HostVanDetailsPricing'
+import HostVanDetailsPhotos from './Pages/Host/HostVanDetails/HostVanDetailsPhotos'
 
 const App = () => {
 
@@ -22,7 +25,11 @@ const App = () => {
                               <Route index element={<HostDashboard />} />
                               <Route path='income' element={<HostIncome />} />
                               <Route path='hostvans' element={<HostVans />} />
-                              <Route path='hostvans/:id' element={<HostVanDetails />} />
+                              <Route path='hostvans/:id' element={<HostVanDetails />} >
+                                   <Route index element={<HostVanDetailsInfo />} />
+                                   <Route path='pricing' element={<HostVanDetailsPricing />} />
+                                   <Route path='photos' element={<HostVanDetailsPhotos />} />
+                              </Route>
                               <Route path='reviews' element={<HostReviews />} />
                          </Route>
                          <Route path="vans" element={<Vans />} />
