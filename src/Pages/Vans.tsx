@@ -3,10 +3,10 @@ import { NavLink } from "react-router-dom"
 function Vans() {
      return (
           <div>
-               <h2>Vans</h2>
-               <NavLink to='/vans/:id'><h3>van1</h3></NavLink>
-               <NavLink to='/vans/:id'><h3>van2</h3></NavLink>
-               <NavLink to='/vans/:id'><h3>van3</h3></NavLink>
+               <h3>This is Vans page</h3>
+               <NavLink to='/vans/1'><h3>van1</h3></NavLink>
+               <NavLink to='/vans/2'><h3>van2</h3></NavLink>
+               <NavLink to='/vans/3'><h3>van3</h3></NavLink>
           </div>
      )
 }
