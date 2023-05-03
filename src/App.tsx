@@ -1,8 +1,9 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './Pages/Home'
 import About from './Pages/About'
-import Details from './Pages/Details'
 import Layout from './Components/Layout'
+import Host from './Pages/Host'
+import Vans from './Pages/Vans'
 
 const App = () => {
 
@@ -11,8 +12,9 @@ const App = () => {
                <Routes>
                     <Route path='/' element={<Layout />}>
                          <Route index element={<Home />} />
-                         <Route path="/about" element={<About />} />
-                         <Route path="/about/:id" element={<Details />} />
+                         <Route path="host" element={<Host />} />
+                         <Route path="vans" element={<Vans />} />
+                         <Route path="about" element={<About />} />
                     </Route>
                </Routes>
           </BrowserRouter>

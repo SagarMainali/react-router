@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom"
 function Header() {
      return (
           <div className="header">
-               <h1>#VANLIFE</h1>
+               <NavLink to='/' style={{fontSize: '26px'}}>#VANLIFE</NavLink>
                <div className="links">
                     <NavLink to='/host'>Host</NavLink>
                     <NavLink to='/vans'>Vans</NavLink>
