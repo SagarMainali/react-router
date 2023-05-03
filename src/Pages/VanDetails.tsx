@@ -7,8 +7,7 @@ function VanDetails() {
 
      return (
           <div>
-               {/* <NavLink to='/vans'>Go back</NavLink> */}
-               <h4 onClick={useGoBack(-1)} style={{ textDecoration: 'underline', cursor: 'pointer' }}>Go back</h4>
+               <h4 onClick={useGoBack(-1)} style={{ textDecoration: 'underline', cursor: 'pointer' }}>Go back...</h4>
                <h2>You are seeing the deails of van {param.id}</h2>
           </div>
      )

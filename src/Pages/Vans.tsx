@@ -7,9 +7,9 @@ function Vans() {
                <NavLink to='/vans/1'><h3>van1</h3></NavLink>
                <NavLink to='/vans/2'><h3>van2</h3></NavLink>
                <NavLink to='/vans/3'><h3>van3</h3></NavLink>
-               <NavLink to='/vans/4'><h3>van1</h3></NavLink>
-               <NavLink to='/vans/5'><h3>van2</h3></NavLink>
-               <NavLink to='/vans/6'><h3>van3</h3></NavLink>
+               <NavLink to='/vans/4'><h3>van4</h3></NavLink>
+               <NavLink to='/vans/5'><h3>van5</h3></NavLink>
+               <NavLink to='/vans/6'><h3>van6</h3></NavLink>
           </div>
      )
 }
