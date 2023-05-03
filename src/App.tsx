@@ -35,6 +35,7 @@ const App = () => {
                          <Route path="vans" element={<Vans />} />
                          <Route path="vans/:id" element={<VanDetails />} />
                          <Route path="about" element={<About />} />
+                         <Route path='*' element={<h2>*Incorrect URL</h2>} />
                     </Route>
                </Routes>
           </BrowserRouter>
