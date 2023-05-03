@@ -1,14 +1,14 @@
-import { useParams } from "react-router-dom"
-import useGoBack from "../CustomHook/GoBack"
+import useGetParams from "../CustomHook/useGetParams"
+import useGoBack from "../CustomHook/useGoBack"
 
 function VanDetails() {
 
-     const param = useParams()
+     const param = useGetParams()
 
      return (
           <div>
                <h4 onClick={useGoBack(-1)} style={{ textDecoration: 'underline', cursor: 'pointer' }}>Go back...</h4>
-               <h2>You are seeing the deails of van {param.id}</h2>
+               <h2>You are seeing the details of van {param}</h2>
           </div>
      )
 }
