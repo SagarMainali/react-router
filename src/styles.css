@@ -14,14 +14,16 @@ body {
 }
 
 .header-links>*,
-.host-header-links>* {
+.host-header-links>*,
+.hostvandetailheader-links>* {
      margin-right: 40px;
      text-decoration: none;
      font-size: 18px;
      color: blue;
 }
 
-.host-header-links{
+.host-header-links,
+.hostvandetailheader-links {
      margin-bottom: 20px;
 }
 
@@ -40,7 +42,7 @@ body {
      margin-top: auto;
 }
 
-.active{
+.active {
      color: red;
      text-decoration: underline;
 }
