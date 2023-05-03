@@ -3,10 +3,10 @@ import { NavLink } from "react-router-dom"
 function HostHeader() {
      return (
           <div className="host-header-links">
-               <NavLink to='/host' end>Dashboard</NavLink>
-               <NavLink to='/host/income'>Income</NavLink>
-               <NavLink to='/host/hostvans'>Vans</NavLink>
-               <NavLink to='/host/reviews'>Reviews</NavLink>
+               <NavLink to='.' end>Dashboard</NavLink>
+               <NavLink to='income'>Income</NavLink>
+               <NavLink to='hostvans'>Vans</NavLink>
+               <NavLink to='reviews'>Reviews</NavLink>
           </div>
      )
 }
