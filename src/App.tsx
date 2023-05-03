@@ -9,6 +9,7 @@ import HostLayout from './Components/HostLayout'
 import HostIncome from './Pages/Host/HostIncome'
 import HostReviews from './Pages/Host/HostReviews'
 import HostVans from './Pages/Host/HostVans'
+import HostVanDetails from './Pages/Host/HostVanDetails'
 
 const App = () => {
 
@@ -20,7 +21,8 @@ const App = () => {
                          <Route path="host" element={<HostLayout />} >
                               <Route index element={<HostDashboard />} />
                               <Route path='income' element={<HostIncome />} />
-                              <Route path='vans' index element={<HostVans />} />
+                              <Route path='hostvans' element={<HostVans />} />
+                              <Route path='hostvans/:id' element={<HostVanDetails />} />
                               <Route path='reviews' element={<HostReviews />} />
                          </Route>
                          <Route path="vans" element={<Vans />} />
