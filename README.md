@@ -1,1 +1,1 @@
-## This repo is made to learn react-router. 
+## Learning routing in react.js
